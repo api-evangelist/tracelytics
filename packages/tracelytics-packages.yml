@@ -1,0 +1,57 @@
+generated: '2026-07-21'
+method: searched
+source: https://rubygems.org + https://registry.npmjs.org + https://pypi.org
+notes: >-
+  Tracelytics was acquired by AppNeta in June 2012 and its tracing product became
+  AppNeta TraceView, which was in turn acquired by SolarWinds in 2016. These
+  packages are the first-party TraceView instrumentation agents built by the
+  Tracelytics/TraceView team (authors Peter Giacomo Lombardo and Spiros
+  Eliopoulos). All are legacy/deprecated — no releases since ~2016 and the
+  tracelytics.com domain no longer resolves — but they remain published on the
+  public registries. PyPI package `oboe` is an UNRELATED Cornell AutoML project,
+  not a Tracelytics artifact.
+packages:
+  - language: ruby
+    registry: rubygems
+    name: oboe
+    url: https://rubygems.org/gems/oboe
+    install: gem install oboe
+    official: true
+    status: deprecated
+    latest_version: 2.7.19
+    latest_release: '2015-05-28'
+    downloads: 253446
+    license: AppNeta Open License, Version 1.0
+    description: TraceView instrumentation for MRI Ruby, JRuby and related frameworks (deprecated in favor of the traceview gem)
+  - language: ruby
+    registry: rubygems
+    name: traceview
+    url: https://rubygems.org/gems/traceview
+    install: gem install traceview
+    official: true
+    status: legacy
+    latest_version: 3.8.4
+    latest_release: '2016-10-17'
+    downloads: 148358
+    license: Librato Open License, Version 1.0
+    description: TraceView performance instrumentation for MRI Ruby, JRuby and related frameworks (homepage now traceview.solarwinds.com)
+  - language: javascript
+    registry: npm
+    name: traceview
+    url: https://www.npmjs.com/package/traceview
+    install: npm install traceview
+    official: true
+    status: legacy
+    latest_version: 2.7.3
+    description: Node.js agent for AppNeta TraceView (ships the node-tv binary)
+  - language: python
+    registry: pypi
+    name: python-traceview
+    url: https://pypi.org/project/python-traceview/
+    install: pip install python-traceview
+    official: false
+    status: legacy
+    latest_version: 0.7.0
+    author: Daniel Riti
+    source: https://github.com/danriti/python-traceview
+    description: Third-party client library for the TraceView Data API (api.tracelytics.com, no longer resolving)

@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+notes: >-
+  appneta.com is the domain of Tracelytics's 2012 acquirer AppNeta (itself now
+  redirecting to broadcom.com/appneta). The company's own domain tracelytics.com
+  is dead — probed 2026-07-21 with no A or NS records and no HTTPS connection —
+  recorded below as valid absence data.
+hosts:
+- host: tracelytics.com
+  https: false
+  resolves: false
+- host: appneta.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Mar 20 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: tracelytics.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  a_records: false
+  ns_records: false
+- domain: appneta.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
